@@ -1,8 +1,9 @@
 wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
 echo "deb http://pkg.jenkins-ci.org/debian binary/" > jenkins.list
-sudo mv jenkins.list /etc/apt/sources.list.d/
+echo "deb http://archive.canonical.com/ubuntu maverick partner" > jdk.list
+sudo mv *.list /etc/apt/sources.list.d/
 
 sudo aptitude update
 sudo aptitude -y safe-upgrade
-sudo aptitude install -y jenkins apache2 htop
+sudo aptitude install -y jenkins apache2 htop sun-java6-jdk
 
