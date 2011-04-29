@@ -4,5 +4,5 @@ sudo mv jenkins.list /etc/apt/sources.list.d/
 
 sudo aptitude update
 sudo aptitude -y safe-upgrade
-sudo aptitude install -y jenkins
+sudo aptitude install -y jenkins apache2 htop
 
