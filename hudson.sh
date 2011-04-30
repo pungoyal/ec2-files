@@ -5,5 +5,5 @@ sudo mv *.list /etc/apt/sources.list.d/
 
 sudo aptitude update
 sudo aptitude -y safe-upgrade
-sudo aptitude install -y sun-java6-jdk
-sudo aptitude install -y jenkins apache2 htop 
+# sudo aptitude install -y sun-java6-jdk
+# sudo aptitude install -y jenkins apache2 htop 
